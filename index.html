@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="width=1200px>
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just Fares</title>
+  <link href="styles.css" rel="stylesheet">
+  <link href="media.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ricostacruz.com/jquery.transit/jquery.transit.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  
+</head>
+
+<body>
+  <section class="first-page">
+    <header>
+      <img class="logo" src="./img/logo.png" alt="">
+      <div class="nav-bar">
+        <a class="nav-bar-link" href="#trips">TRIPS</a>
+        <a class="nav-bar-link" href="#about-us">ABOUT US</a>
+        <a class="nav-bar-link" href="#blog">BLOG</a>
+        <a class="nav-bar-link" href="#photos">PHOTOS</a>
+        <a class="nav-bar-link" href="#gallery">GALLERY</a>
+
+      </div>
+      <div class="nav-bar-search"><img src="./img/search.svg"></div>
+
+    </header>
+    <div class="first-page-text">
+      <h2 class="first-page-text-h2">Just <span> Fares </span></h2>
+      <h1 class="first-page-text-h1">Travel Agency</h1>
+      <p class="first-page-text-p">Just Buy A Trip And Enjoy It</p>
+    </div>
+    <div class="fp-buttons">
+      <div>
+        <div class="v-fp-button1"></div>
+        <a href="explore.html" class="fp-button1">EXPLORE NOW</a>
+      </div>
+      <div>
+        <div class="v-fp-button2"></div>
+        <a href="form-page.html" class="fp-button2">PURCHASE NOW</a>
+      </div>
+    </div>
+  </section>
+  <section class="squares">
+    <div class="dark-blue-square">
+      <img src="./img/finger-square.svg">
+      <p>Different choices</p>
+    </div>
+    <div class="bright-blue-square">
+      <img class="diamond-square" src="./img/diamond-square.svg">
+      <p>Good prices</p>
+    </div>
+    <div class="dark-blue-square">
+      <img src="./img/lamp-square.svg">
+      <p>Сonstant support</p>
+    </div>
+    <div class="bright-blue-square">
+      <img class="devices-square" src="./img/devices-square.svg">
+      <p>Comfortable design</p>
+    </div>
+  </section>
+  <div class="container">
+    <section class="services" id="trips">
+      <h2 class="title-secondpage">Our Trips</h2>
+      <ul class="services-list">
+        <li class="services-item" id="Eu" onclick="setContent('Eu')">
+          Europe
+        </li>
+        <li class="services-item" id="US" onclick="setContent('US')">
+          United States
+        </li>
+        <li class="services-item" id="Mexico" onclick="setContent('Mexico')">
+          Mexico
+        </li>
+        <li class="services-item" id="Bali" onclick="setContent('Bali')">
+          Bali
+        </li>
+        <li class="services-item" id="Asia" onclick="setContent('Asia')">
+          Asia
+        </li>
+        <li class="services-item" id="Dom" onclick="setContent('Dom')">
+          Dominican Republic
+        </li>
+      </ul>
+
+
+      <div class="services-list-content" id="content">
+      </div>
+
+    </section>
+  </div>
+
+
+
+  <section class="shadow3">
+    <div class="shadow3-content">
+      <h1 class="shadow-title">Everything is ready. just buy a trip and enjoy it!</h1>
+      <p class="shadow-text">Enjoy a wonderful holiday and adventure</p>
+    </div>
+
+    <div class="fp-buttons">
+      <div class="v-fp-button2"></div>
+      <a href="form-page.html" class="fp-button2">BUY NOW</a>
+    </div>
+
+
+  </section>
+  <section class="third-page" id="photos">
+    <div class="container">
+      <h2 class="title-thirdpage">Our Amazing Photos</h2>
+
+
+
+      <ul class="our-work-list">
+        <li class="third-page-item active" data-worktab="All">All</li>
+        <li class="third-page-item" data-worktab="Asia">
+          Asia
+        </li>
+        <li class="third-page-item" data-worktab="America">America</li>
+        <li class="third-page-item" data-worktab="Eu">
+          Europe
+        </li>
+        <li class="third-page-item" data-worktab="Africa">Africa</li>
+      </ul>
+      <ul class="work-photo" id="work-list">
+        <li class="work-photo-list" data-workdescription="Amrica">
+          <img class="work-photo-img" src="./sections-img/America1.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">America</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Asia">
+          <img class="work-photo-img" src="./sections-img/Asia.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Asia</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="America">
+          <img class="work-photo-img" src="./sections-img/America2.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">America</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Asia">
+          <img class="work-photo-img" src="./sections-img/Asia2.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Asia</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="America">
+          <img class="work-photo-img" src="./sections-img/America3.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">America</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Asia">
+          <img class="work-photo-img" src="./sections-img/Asia3.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Asia</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Eu">
+          <img class="work-photo-img" src="./sections-img/Europe1.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Europe</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Africa">
+          <img class="work-photo-img" src="./sections-img/Africa1.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Africa</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Asia">
+          <img class="work-photo-img" src="./sections-img/Asia4.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Asia</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Africa">
+          <img class="work-photo-img" src="./sections-img/Africa2.jpg" alt="" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Africa</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Eu">
+          <img class="work-photo-img" src="./sections-img/Europe2.jpg" alt="#" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Europe</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Eu">
+          <img class="work-photo-img" src="./sections-img/Europe3.jpg" alt="#" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Europe</p>
+          </div>
+        </li>
+
+      </ul>
+      <ul class="work-photo additionally">
+        <li class="work-photo-list" data-workdescription="America">
+          <img class="work-photo-img" src="./sections-img/America5.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">America</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Eu">
+          <img class="work-photo-img" src="./img/gdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Europe</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Asia">
+          <img class="work-photo-img" src="./img/wdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Asia</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Africa">
+          <img class="work-photo-img" src="./img/gdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Africa</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Eu">
+          <img class="work-photo-img" src="./img/wdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Europe</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Asia">
+          <img class="work-photo-img" src="./img/gdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Asia</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="America">
+          <img class="work-photo-img" src="./img/wdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">America</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="America">
+          <img class="work-photo-img" src="./img/gdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="#" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">America</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Asia">
+          <img class="work-photo-img" src="./img/gdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Asia</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Eu">
+          <img class="work-photo-img" src="./img/gdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Europe</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Africa">
+          <img class="work-photo-img" src="./img/gdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Africa</p>
+          </div>
+        </li>
+        <li class="work-photo-list" data-workdescription="Eu">
+          <img class="work-photo-img" src="./img/gdesign.jpg" alt="Graphics" />
+          <div class="work-photo-description">
+            <a href="#">
+              <img class="work-photo-icon" src="./sections-img/work-links.svg" alt="Graphics" /></a>
+            <h4 class="work-photo-description-title">Country</h4>
+            <p class="work-photo-description-text">Europe</p>
+          </div>
+        </li>
+      </ul>
+      <button class="button-load" id="loadMore" onclick="loadMore()">
+        <div class="text-svg-btnload">
+          <svg class="plus-button" width="16" height="17" viewBox="0 0 16 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
+              fill="white" />
+          </svg>
+          <span class="text-buttonload">LOAD MORE</span>
+        </div>
+
+      </button>
+    </div>
+  </section>
+
+
+  <section id="blog" class="fourth-page">
+    <h1 class="title-fourth-page">Breaking News</h1>
+    <ul class="news-list">
+      <li class="news-item">
+        <a class="news-link" href="#">
+          <img class="news-img" src="./b-news-img/pr1.jpg" alt="#" />
+          <p class="news-date">12 Feb</p>
+          <h5 class="news-title">Blog Post</h5>
+        </a>
+        <div class="news-details">
+          <a class="news-text-link news-text-link-special" href="#">By admin</a>
+          <a class="news-text-link" href="#">2 comment</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <a class="news-link" href="#">
+          <img class="news-img" src="./b-news-img/pr2.jpg" alt="#" />
+          <p class="news-date">13 March</p>
+          <h5 class="news-title">Blog Post</h5>
+        </a>
+        <div class="news-details">
+          <a class="news-text-link news-text-link-special" href="#">By admin</a>
+          <a class="news-text-link" href="#">3 comment</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <a class="news-link" href="#">
+          <img class="news-img" src="./b-news-img/pr3.jpg" alt="#" />
+          <p class="news-date">9 April</p>
+          <h5 class="news-title">Blog Post</h5>
+        </a>
+        <div class="news-details">
+          <a class="news-text-link news-text-link-special" href="#">By admin</a>
+          <a class="news-text-link" href="#">7 comment</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <a class="news-link" href="#">
+          <img class="news-img" src="./b-news-img/pr4.jpg" alt="#" />
+          <p class="news-date">4 May</p>
+          <h5 class="news-title">Blog Post</h5>
+        </a>
+        <div class="news-details">
+          <a class="news-text-link news-text-link-special" href="#">By admin</a>
+          <a class="news-text-link" href="#">4 comment</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <a class="news-link" href="#">
+          <img class="news-img" src="./b-news-img/pr5.jpg" alt="#" />
+          <p class="news-date">19 June</p>
+          <h5 class="news-title">Blog Post</h5>
+        </a>
+        <div class="news-details">
+          <a class="news-text-link news-text-link-special" href="#">By admin</a>
+          <a class="news-text-link" href="#">10 comment</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <a class="news-link" href="#">
+          <img class="news-img" src="./b-news-img/pr6.jpg" alt="#" />
+          <p class="news-date">12 Jule</p>
+          <h5 class="news-title">Blog Post</h5>
+        </a>
+        <div class="news-details">
+          <a class="news-text-link news-text-link-special" href="#">By admin</a>
+          <a class="news-text-link" href="#">5 comment</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <a class="news-link" href="#">
+          <img class="news-img" src="./b-news-img/pr7.jpg" alt="#" />
+          <p class="news-date">17 Aug</p>
+          <h5 class="news-title">Blog Post</h5>
+        </a>
+        <div class="news-details">
+          <a class="news-text-link news-text-link-special" href="#">By admin</a>
+          <a class="news-text-link" href="#">11 comment</a>
+        </div>
+      </li>
+      <li class="news-item">
+        <a class="news-link" href="#">
+          <img class="news-img" src="./b-news-img/pr8.jpg" alt="#" />
+          <p class="news-date">2 Sept</p>
+          <h5 class="news-title">Blog Post</h5>
+        </a>
+        <div class="news-details">
+          <a class="news-text-link news-text-link-special" href="#">By admin</a>
+          <a class="news-text-link" href="#">9 comment</a>
+        </div>
+      </li>
+    </ul>
+
+
+  </section>
+  <section class="fifth-page" id="about-us">
+    <div class="container"></div>
+    <h1 class="title-fifth-page">What People Say About Just Fares</h1>
+    <img class="quote-fifth" src="./img/people/quote5.svg" alt="">
+
+
+    <div class="slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <p class="comment">
+            I had an amazing experience with this tour agency! From the moment
+            I inquired about their services to the end of our trip, they provided excellent customer service.
+            The tour guides were knowledgeable, friendly, and made our journey memorable.
+            I highly recommend this agency for anyone looking to explore new destinations stress-free.
+          </p>
+          <p class="commentator-name">Carlos Rodriguez Sanchez</p>
+          <p class="commentator-specialty">Spain</p>
+          <div class="swiper-slider-image">
+            <img class="image-people-say" src="./img/people/people1.png" alt="people" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <p class="comment">
+            My recent trip with this tour agency was enjoyable overall.
+            The itinerary was well-planned, and the destinations were fantastic. The guides were friendly,
+            but there were a few hiccups in terms of timing and communication. Despite this, the agency made efforts to
+            resolve issues promptly.
+            I'd consider using them again, with some improvements in mind.
+          </p>
+          <p class="commentator-name">Sophia Patel Khan</p>
+          <p class="commentator-specialty">India</p>
+          <div class="swiper-slider-image">
+            <img class="image-people-say" src="./img/people/people2.png" alt="people" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <p class="comment">
+            This tour agency exceeded my expectations! Our trip was meticulously planned, and everything went smoothly.
+            The tour guides were not only knowledgeable but also passionate about the destinations we visited.
+            I appreciated the personal touch and attention to detail. I'll definitely be booking with them again.
+          </p>
+          <p class="commentator-name">Luca Moretti Rossi</p>
+          <p class="commentator-specialty">Italy</p>
+          <div class="swiper-slider-image">
+            <img class="image-people-say" src="./img/people/people3.png" alt="people" />
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <p class="comment">
+            My family and I had a great time on our trip with this tour agency.
+            The agency catered to our needs, even accommodating dietary restrictions.
+            The guides were friendly and approachable, making the experience enjoyable for everyone.
+            A few minor issues cropped up, but the agency addressed them promptly. We would consider booking with them
+            again.
+          </p>
+          <p class="commentator-name">Hiroshi Tanaka Sato</p>
+          <p class="commentator-specialty">Japan</p>
+          <div class="swiper-slider-image">
+            <img class="image-people-say" src="./img/people/people4.png" alt="people" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-back">
+        <img src="./img/people/slide5.svg" alt="" />
+      </div>
+      <div class="swiper-button-forvard">
+        <img src="./img/people/slide5.svg" alt="" />
+      </div>
+    </div>
+    <div class="slider-mini swiper">
+      <div class="swiper-wrapper-mini swiper-wrapper">
+        <div class="swiper-slide-mini swiper-slide">
+          <div class="swiper-slider-mini-image">
+            <img class="image-people-say-mini" src="./img/people/people1.png" alt="people" />
+          </div>
+        </div>
+        <div class="swiper-slide-mini swiper-slide">
+          <div class="swiper-slider-mini-image">
+            <img class="image-people-say-mini" src="./img/people/people2.png" alt="people" />
+          </div>
+        </div>
+        <div class="swiper-slide-mini swiper-slide">
+          <div class="swiper-slider-mini-image">
+            <img class="image-people-say-mini" src="./img/people/people3.png" alt="people" />
+          </div>
+        </div>
+        <div class="swiper-slide-mini swiper-slide">
+          <div class="swiper-slider-mini-image">
+            <img class="image-people-say-mini" src="./img/people/people4.png" alt="people" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+  <section class="sixth-page" id="gallery">
+    <div class="container">
+      <h1 class="title-sixth-page">Gallery of best images</h1>
+      <ul class="gallery">
+        <li class="gallery-item">
+          <img class="picture-img" src="./us-img/c1.jpg" alt="#" width="378" height="263" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item">
+          <img class="picture-img" src="./us-img/c2.jpg" alt="#" width="378" height="263" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item">
+          <img class="picture-img" src="./us-img/c3.jpg" alt="#" width="378" height="290" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item">
+          <img class="picture-img" src="./us-img/c4.jpg" alt="#" width="370" height="380" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item">
+          <img class="picture-img" src="./us-img/c5.jpg" alt="#" width="378" height="247" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item">
+          <img class="picture-img" src="./us-img/c6.jpg" alt="#" width="378" height="254" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <ul class="gallery-grid">
+          <li class="gallery-grid-item">
+            <img class="picture-img" src="./us-img/c7.jpg" alt="#" width="180" height="168" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-grid-item">
+            <img class="picture-img" src="./us-img/c8.jpg" alt="#" width="181" height="169" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+        </ul>
+        <ul class="gallery-list-two">
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c9.jpg" alt="#" width="124" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c10.jpg" alt="#" width="119" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c10.jpg" alt="#" width="115" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c11.jpg" alt="#" width="124" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c12.jpg" alt="#" width="119" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c1.jpg" alt="#" width="115" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c2.jpg" alt="#" width="124" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c3.jpg" alt="#" width="119" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+          <li class="gallery-two-item">
+            <img class="picture-img" src="./us-img/c3.jpg" alt="#" width="115" height="92" />
+            <div class="gallery-icon-group">
+              <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+              <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+            </div>
+          </li>
+        </ul>
+        <li class="gallery-two-item">
+          <img class="picture-img" src="./us-img/c4.jpg" alt="#" width="363" height="373" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+      </ul>
+      <ul class="gallery-add additionally">
+        <li class="gallery-item-add">
+          <img class="picture-img" src="./us-img/c1.jpg" alt="#" width="378" height="263" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item-add">
+          <img class="picture-img" src="./us-img/c2.jpg" alt="#" width="378" height="263" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item-add">
+          <img class="picture-img" src="./us-img/c10.jpg" alt="#" width="378" height="290" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item-add">
+          <img class="picture-img" src="./us-img/c7.jpg" alt="#" width="370" height="380" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item-add">
+          <img class="picture-img" src="./us-img/c6.jpg" alt="#" width="378" height="247" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+        <li class="gallery-item-add">
+          <img class="picture-img" src="./us-img/c12.JPG" alt="#" width="378" height="254" />
+          <div class="gallery-icon-group">
+            <img class="gallery-icon" src="./img/grid/see-grid.svg" alt="#" />
+            <img class="gallery-icon" src="./img/grid/search-grid.svg" alt="#" />
+          </div>
+        </li>
+      </ul>
+      <button class="button-load1">
+        <div class="text-svg-btnload">
+          <svg class="plus-button" width="16" height="17" viewBox="0 0 16 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.5 6.99735H9.99996V1.49787C9.99996 1.22194 9.77611 0.997242 9.49998 0.997242H6.4999C6.22387 0.997242 5.99991 1.22194 5.99991 1.49787V6.99735H0.499994C0.223838 6.99735 7.98702e-06 7.22206 7.98702e-06 7.4984V10.4976C7.98702e-06 10.7731 0.223838 10.9974 0.499994 10.9974H5.99991V16.4977C5.99991 16.7732 6.22387 16.998 6.4999 16.998H9.49998C9.77611 16.998 9.99996 16.7732 9.99996 16.4977V10.9974H15.5C15.776 10.9974 16 10.7731 16 10.4976V7.4984C16 7.22206 15.776 6.99735 15.5 6.99735Z"
+              fill="white" />
+          </svg>
+          <span class="text-buttonload1">LOAD MORE</span>
+        </div>
+
+      </button>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>
+        &#169; 2023
+        <a href=""><span class="green-color">Just Fares</span></a>
+      </p>
+    </div>
+  </footer>
+
+
+
+  <script>
+    $(document).ready(function () {
+      $('.fp-button1').hover(
+        function () {
+
+          $(this).transition({ y: '-5px' });
+        },
+        function () {
+
+          $(this).transition({ y: '0' });
+        }
+      );
+    });
+    $(document).ready(function () {
+      $('.fp-button2').hover(
+        function () {
+
+          $(this).transition({ y: '-5px' });
+        },
+        function () {
+
+          $(this).transition({ y: '0' });
+        }
+      );
+    });
+  </script>
+
+  <script src="apps.js"></script>
+
+</body>
+
+</html>
